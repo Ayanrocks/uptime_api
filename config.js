@@ -16,13 +16,13 @@ environments.staging = {
   twilio: {
     accountSid: "AC1918fd53b8a7d18d8faf58b9c33aa283",
     authToken: "720ca20c5a32dc95898ada3e7f87425f",
-    fromPhone: "+15005550006",
-    templateGlobals: {
-      appName: "Uptime Checker",
-      companyName: "orilliance",
-      yearCreated: "2018",
-      baseUrl: "http://localhost:3000/"
-    }
+    fromPhone: "+15005550006"
+  },
+  templateGlobals: {
+    appName: "Uptime Checker",
+    companyName: "orilliance",
+    yearCreated: "2018",
+    baseUrl: "http://localhost:3000/"
   }
 };
 
@@ -36,13 +36,13 @@ environments.production = {
   twilio: {
     accountSid: "AC1918fd53b8a7d18d8faf58b9c33aa283",
     authToken: "720ca20c5a32dc95898ada3e7f87425f",
-    fromPhone: "+15005550006",
-    templateGlobals: {
-      appName: "Uptime Checker",
-      companyName: "orilliance",
-      yearCreated: "2018",
-      baseUrl: "http://localhost:3000/"
-    }
+    fromPhone: "+15005550006"
+  },
+  templateGlobals: {
+    appName: "Uptime Checker",
+    companyName: "orilliance",
+    yearCreated: "2018",
+    baseUrl: "http://localhost:3000/"
   }
 };
 

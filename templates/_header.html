@@ -1,35 +1,56 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <base href="{global.baseUrl}" />
-    <title>{head.title} | {global.appName}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="{head.description}" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen"
-      href="public/app.css"
-    />
-    <script src="public/app.js"></script>
-  </head>
-  <body class="{body.class}">
-    <!-- Page wrapper -->
-    <div class="wrapper">
-      <!-- Header -->
-      <div class="header"></div>
+
+<head>
+
+  <!-- General Settings -->
+  <meta charset="utf-8">
+  <meta http-equiv="content-language" content="en-us">
+  <base href="{global.baseUrl}" />
+
+  <!-- Meta Tags -->
+  <title>{head.title} | {global.appName}</title>
+  <meta name="description" content="{head.description}">
+
+  <!-- Static Assets -->
+  <link type="image/x-icon" rel="icon" href="favicon.ico">
+  <script type="text/javascript" charset="utf-8" src="public/app.js"></script>
+  <link rel="stylesheet" type="text/css" href="public/app.css" />
+
+</head>
+
+<body class="{body.class}">
+  <!-- Page Wrapper -->
+  <div class="wrapper">
+    <!-- Header -->
+    <div class="header">
+      <!-- Logo -->
+      <a class="logo" href="/">
+        <img src="public/logo.png" alt="Logo" />
+      </a>
       <!-- Navigation -->
       <ul class="menu">
-          <li><a href="/">Home</a></li>
-          <li><a href="/" class="loggedOut">Signup</a></li>
-          <li><a href="/" class="loggedOut">Login</a></li>
-          <li><a href="/" class="loggedIn">Dashboard</a></li>
-          <li><a href="/" class="loggedIn">Account Settings</a></li>
-          <li><a href="/" class="loggedIn">Logout</a></li>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li class="loggedOut">
+          <a href="/account/create">Signup</a>
+        </li>
+        <li class="loggedOut">
+          <a href="/session/create">Login</a>
+        </li>
+        <li class="loggedIn">
+          <a href="/checks/all">Dashboard</a>
+        </li>
+        <li class="loggedIn">
+          <a href="/account/edit">Account Settings</a>
+        </li>
+        <li class="loggedIn">
+          <a href="#" id="logoutButton">Logout</a>
+        </li>
       </ul>
-      <!-- Page specific content -->
 
-      <div class="content">
- 
+      <div class="clear"></div>
+    </div>
+
+    <!-- Page-Specific Content -->
+    <div class="content">
